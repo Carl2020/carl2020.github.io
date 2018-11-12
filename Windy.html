@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+    <!-- to auto adjust for different device screen sizes and set the initial zoom level -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latitude v Wind Speed</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="height:1500px">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                   
+            </button> 
+            <a class="navbar-brand" id="navbrand" href="./Index.html">Latitude</a>
+          </div>
+        <ul class="nav navbar-nav navbar-right navbar-collapse" id="myNavbar">
+          <li class="active"><a href="./Index.html">Home</a></li>
+          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="./Windy.html">Plots<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="./Temp.html">Max Temperature</a></li>
+              <li><a href="./Cloudy.html">Cloudiness</a></li>
+              <li><a href="./Humidity.html">Humidity</a></li>
+              <li><a href="./Windy.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li><a href="./Comparison.html">Comparison</a></li>
+          <li><a href="./Data.html">Data</a></li>
+        </ul>
+      </div>
+    </nav>
+ 
+   <!-- Content-->
+  <div class="container-fluid" style="margin-top:50px">
+    <!-- First Row -->
+    <div class="row">
+
+      <!-- First of two columns -->
+      <div class="col-md-8">
+        <h1>Wind Speed</h1>
+      </div>
+
+      <!-- Second of two columns -->
+      <div class="col-md-4">
+        <h1>Visualizations</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <img src="Images/Windspeed.png" width=100%/>
+          <p>There does not appear to be much of a relationship between distance from the equator and wind speed. 
+            However, what the scatter plot shows is that at least in January, the northern hemisphere is windier than the southern hemisphere.
+            There does appear to be a lot more datapoints north of the equator than south, so perhaps if we had done a random selection in both hemispheres separately, the pattern might, or might not, show a difference in wind speed between northern
+            and southern hemispheres.
+          </p>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+        <div class="col-md-2">
+          <a href="./Temp.html"><img src="Images/Temp.png" width=100%/></a>
+          <a href="./Humidity.html"><img src="Images/Humidity.png" width=100%/></a>
+        </div>
+        <div class="col-md-2">  
+          <a href="./Cloudy.html"><img src="Images/Cloudiness.png" width=100%/></a>
+          <a href="./Windy.html"><img src="Images/Windspeed.png" width=100%/></a>
+        </div>
+      </div>
+    </div>
+  </div>            
+
+
+  </div>
+
+</body>
+
+</html>

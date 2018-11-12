@@ -2,65 +2,87 @@
 <html lang="en-us">
 
 <head>
+
   <meta charset="UTF-8">
-  <title>My Bio Page</title>
+    <!-- to auto adjust for different device screen sizes and set the initial zoom level -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latitude Summary</title>
+
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <!-- Headline -->
-  <h1>Welcome to the bio page of Carl Adams!</h1>
-  <!-- Image -->
-</section>
-<img src="carladams.png" alt="Headshot" width="500"
-height="333">
-<section>
-<body>
-  <!-- This is a biopage I have created in html.-->
-  
-  <section>
-    <hr>
-    <h2>Here is a link to my profile on LinkedIn</h2>
-    <p>It contains a lot more details about my skills, experience and education</p>
-  
-      <a target="_blank" href="carladamsprofile.pdf">Learn More about Carl!</a>
-      
-    <embed src="carladamsprofile.pdf" type="application/pdf" width="100%" height="600px" />
 
-    <section>
-      <hr>
-      <h2>Here is a link to my profile on LinkedIn</h2>
-      <p>It contains a lot more details about my skills, experience and education</p>
-    
-        <a target="_blank" href="https://www.linkedin.com/in/carladams1/">Learn More about Carl!</a>
-      </p>
-
-
-  <!-- Link with New Tab -->
-  <a href="https://www.linkedin.com/in/carladams1/" target="_blank">Opens new tab</a>
-  <br>
-
-  <!-- Bold Link -->
-  <strong><a href="https://www.linkedin.com/in/carladams1/">This is a bold link</a></strong>
-  <br>
-
-  <!-- Placeholder link -->
-  <a href="#">This is placeholder link goes nowhere, for now</a>
-  <br>
+<body style="height:1500px">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-collapse" id="myNavbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" id="navbrand" href="./Index.html">Latitude</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                       
+          </button> 
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="./Index.html">Plots
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="./Temp.html">Max Temperature</a></li>
+                <li><a href="./Humidity.html">Humidity</a></li>
+                <li><a href="./Cloudy.html">Cloudiness</a></li>
+                <li><a href="./Windy.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="./Comparison.html">Comparison</a></li>
+            <li><a href="./Data.html">Data</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
  
+  <div class="container" style="margin-top: 100px">
 
-  <!-- Nesting anchor elements inside of li elements -->
-  <h3>Links are commonly separated inside of unordered lists inside navigation bars</h3>
-  <ul>
-    <li><a href="https://www.youtube.com">YouTube</a></li>
-    <li><a href="https://www.twitter.com">Twitter</a></li>
-    <li><a href="https://www.linkedin.com">LinkedIn</a></li>
-    <li><a href="https://www.github.com">Github</a></li>
-    <li><a href="https://www.stackoverflow.com">StackOverflow</a></li>
-  </ul>
+    <!-- Content -->
+    <div class="row">
 
-  <h3>YouTube</h3>
+      <!-- First of two columns -->
+      <div class="col-md-8">
+        <h1>Summary:   Latitude vs. X</h1>
+      </div>
 
-  <!-- iframe element -->
-  <iframe width="300" height="300" src="https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=1&origin=http://example.com"></iframe>
+      <!-- Second of two columns -->
+      <div class="col-md-4">
+        <h1>Visualizations</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Images/Temp.png" width=100%/>
+        </div>
+        <div class="col-md-4">
+          <p>This project's purpose was to show what aspects (e.g. maximum temperatures, wind speed, etc.)of the weather changes as we approach the equator. To do this, we first pulled data using the OpenWeatherMap API and assembled a dataset from over 500 randomly selected cities from around the world.
+        After assembling the dataset, we used Matplotlib to plot the various features of weather vs. latitude. The features included were: temperature, wind speed, cloudiness and humidity. This site also provides a table containing the dataset and the 4 different visualizations created as part of the analysis, as well as explanations and descriptions of the correlations.
+          </p>
+        </div>
+        <div class="col-md-2">
+          <a href="./Temp.html"><img src="Images/Temp.png" width=100%/></a>
+          <a href="./Humidity.html"><img src="Images/Humidity.png" width=100%/></a>
+        </div>
+        <div class="col-md-2">  
+          <a href="./Cloudy.html"><img src="Images/Cloudiness.png" width=100%/></a>
+          <a href="./Windy.html"><img src="Images/Windspeed.png" width=100%/></a>
+        </div>
+      </div>
+    </div>
+  </div>            
+
+
+  </div>
 
 </body>
 

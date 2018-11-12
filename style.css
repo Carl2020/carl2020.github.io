@@ -1,0 +1,55 @@
+body {
+  background-color: lightgray;
+}
+.container {
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+  
+  h1 {
+    border-bottom: 2px solid;
+    border-color: lightgray;
+    color: lightseagreen;
+    background-color: white;
+    font-size: 25px;
+    height: 40px;
+    padding: 5px;
+    text-align: left;
+    padding-bottom: 7px;
+  }
+
+  h2 {
+    color: lightseagreen;
+    font-size: 17.5px;
+    height: 20px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  img {
+    border: 2px solid;
+    border-color: lightseagreen;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  #navbrand {
+    background-color: lightseagreen;
+    color: white;
+    font-size: 25px;
+    height: 50px;
+    padding: 15px;
+    text-align: left;
+  }
+  
+  p {
+    border: 2px solid;
+    border-color: lightseagreen;
+    background-color: white;
+    color: grey;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 10px;
+  }
